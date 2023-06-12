@@ -17,7 +17,7 @@ public class HelloController {
 
     //RequsetParam: 외부에서 api로 넘긴 파라미터를 가져오는 어노테이션
     @GetMapping("/hello/dto")
-    public HelloResponseDto helloDto(@RequestParam("NAME") String name,
+    public HelloResponseDto helloDto(@RequestParam("name") String name,
                                      @RequestParam("amount") int amount) {
         return new HelloResponseDto(name, amount);
     }
